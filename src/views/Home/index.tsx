@@ -1,12 +1,8 @@
-import React from 'react'
-import logo from '../../logo.svg'
-import RecursiveComponent from '../../components/Renderer/RecursiveComponent'
-import { data } from '../../data/data'
+import RecursiveComponent from "../../components/Renderer/RecursiveComponent";
+import { data } from "../../data/data";
 
 function Home() {
-  return (
-  <RecursiveComponent data={data}/>
-  )
+  return <RecursiveComponent data={data} />;
 }
 
-export default Home
+export default Home;
