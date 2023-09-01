@@ -13,6 +13,10 @@ const RecursiveComponent: React.FC<Props> = ({ data }) => {
     const [componentData,setComponentData] = useState(data);
     const [input,setInput] = useState('');
 
+    const set = (input:string) =>{
+        setInput(input)
+    }
+
     const addItem = (name:string) => {
         setComponentData([...componentData , {name}]);
       };
@@ -26,8 +30,7 @@ const RecursiveComponent: React.FC<Props> = ({ data }) => {
           <div key={item.name}>
             <span> - {item.name}</span>
             {/* //TODO rename to input */}
-            <Form input={input} setInput={()=>setInput}/>
-            {/* <Button name='+' action={()=>addItem('test')}></Button> */}
+            <Form input={input} setInput={(e)=>set(e!)}/>
             <Button name='+' action={()=>addItem(input)}></Button>
             <Button name='-' action={()=>removeItem(item.name)}></Button>
             <div>
