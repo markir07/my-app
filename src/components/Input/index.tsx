@@ -3,7 +3,7 @@ interface Props {
   input: string;
   setInput: (value: string | undefined) => void;
 }
-const Form: React.FC<Props> = ({ input, setInput }) => {
+const Input: React.FC<Props> = ({ input, setInput }) => {
   return (
     <label>
       <input
@@ -15,4 +15,4 @@ const Form: React.FC<Props> = ({ input, setInput }) => {
   );
 };
 
-export default Form;
+export default Input;

@@ -11,6 +11,9 @@ const Layout = () => {
           <li>
             <Link to="/recursion">Recursion</Link>
           </li>
+          <li>
+            <Link to="/evenOrOdd">Even Odd Check</Link>
+          </li>
         </ul>
       </nav>
       <Outlet />
