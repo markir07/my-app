@@ -1,8 +1,8 @@
 import RecursiveComponent from "../../components/Renderer/RecursiveComponent";
 import { data } from "../../data/data";
 
-function Home() {
+function Recursion() {
   return <RecursiveComponent data={data} />;
 }
 
-export default Home;
+export default Recursion;

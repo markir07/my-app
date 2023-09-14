@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 
 interface Props {
   name: string;
-  action: () => void;
+  action: (val?: number | string) => void;
 }
 
 const Button: React.FC<Props> = ({ name, action }) => {
